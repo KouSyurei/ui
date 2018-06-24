@@ -66,10 +66,10 @@ class Earth {
     	this.sphere = new THREE.Mesh(
     	  new THREE.SphereGeometry(this.radius, this.segments, this.segments),
     	  new THREE.MeshLambertMaterial({
-    	    //map: new THREE.ImageUtils.loadTexture("../js/webGL/images/earth.jpg"),
-    	  	//map: new THREE.ImageUtils.loadTexture("../js/webGL/images/earth_political_alpha.png"),  	
-    	  	//map: new THREE.ImageUtils.loadTexture("../js/webGL/images/fire4.png"),  	
-    	  	map: new THREE.ImageUtils.loadTexture("../js/webGL/images/map.png"),    	  	
+    	    //map: new THREE.ImageUtils.loadTexture("js/webGL/images/earth.jpg"),
+    	  	//map: new THREE.ImageUtils.loadTexture("js/webGL/images/earth_political_alpha.png"),  	
+    	  	//map: new THREE.ImageUtils.loadTexture("js/webGL/images/fire4.png"),  	
+    	  	map: new THREE.ImageUtils.loadTexture("js/webGL/images/map.png"),    	  	
     	  	color: 0x0A3B48,
     	  	transparent: true,
     	  	opacity: 0.6,
@@ -89,8 +89,8 @@ class Earth {
 //  		  	transparent: true,
 //  		  	opacity: 1.0,
 //  		  	color: 0x287299,
-//  		  	//map: new THREE.ImageUtils.loadTexture("../js/webGL/images/earth.jpg")
-//  		  	map: new THREE.ImageUtils.loadTexture("../js/webGL/images/earth_political_alpha.png")
+//  		  	//map: new THREE.ImageUtils.loadTexture("js/webGL/images/earth.jpg")
+//  		  	map: new THREE.ImageUtils.loadTexture("js/webGL/images/earth_political_alpha.png")
 //  		  })
 //  		);
 //  		this.rotating.add(this.sphere);
@@ -127,7 +127,7 @@ class Earth {
 //  			  color: 0xE64853,
 //  			  blending: THREE.AdditiveBlending,
 //  			  opacity: 0.6,
-//  			  map: new THREE.ImageUtils.loadTexture("../js/webGL/images/fire4.png")
+//  			  map: new THREE.ImageUtils.loadTexture("js/webGL/images/fire4.png")
 //  		  })
 //  		));
 //  		/*this.sphere.add(new THREE.Mesh(
@@ -137,13 +137,13 @@ class Earth {
 //  			  transparent: true,
 //  			  color: 0x2AC7CC,
 //  			  opacity: 0.8,
-//  			  map: new THREE.ImageUtils.loadTexture("../js/webGL/images/earth_political_alpha.png")
+//  			  map: new THREE.ImageUtils.loadTexture("js/webGL/images/earth_political_alpha.png")
 //  		  })
 //  		));*/
 //  		
 //  	}
 		var img0 = new Image();
-		img0.src = "../js/webGL/images/map_inverted.png";
+		img0.src = "js/webGL/images/map_inverted.png";
 		img0.onload = () => {
 			this.rotating.add(this.showEarth(img0));
 		}
@@ -204,7 +204,7 @@ class Earth {
   ring() {
   	var geometry = new THREE.CubeGeometry(480, 480, 1);
     var material = new THREE.MeshBasicMaterial({
-    	map: THREE.ImageUtils.loadTexture("../js/webGL/images/radial_layers_medium.jpg"),
+    	map: THREE.ImageUtils.loadTexture("js/webGL/images/radial_layers_medium.jpg"),
     	//color: 0xCB0A0A,
     	opacity: 0.4,
 			blending: THREE.AdditiveBlending
@@ -382,7 +382,7 @@ class Earth {
   		texture: {
   			type: "t",
   			value: 0,
-  			texture: THREE.ImageUtils.loadTexture("../js/webGL/images/particleA.png")
+  			texture: THREE.ImageUtils.loadTexture("js/webGL/images/particleA.png")
   		}
   	};
     var shaderMaterial = new THREE.ShaderMaterial({
@@ -1235,7 +1235,7 @@ class Earth {
     		texture: {
     			type: "t",
     			value: 0,
-    			texture: THREE.ImageUtils.loadTexture("../js/webGL/images/particleA.png")
+    			texture: THREE.ImageUtils.loadTexture("js/webGL/images/particleA.png")
     		}
     	},
   		attributes: attributes,
@@ -1351,7 +1351,7 @@ class Earth {
     		texture: {
     			type: "t",
     			value: 0,
-    			texture: THREE.ImageUtils.loadTexture("../js/webGL/images/particleA.png")
+    			texture: THREE.ImageUtils.loadTexture("js/webGL/images/particleA.png")
     		}
     	},
   		attributes: attributes,
@@ -1380,7 +1380,7 @@ class Earth {
   		transparent: true
   		// sizeAttenuation: true,
   	});
-  	/*var particleGraphic = THREE.ImageUtils.loadTexture("../js/webGL/images/map_mask.png");
+  	/*var particleGraphic = THREE.ImageUtils.loadTexture("js/webGL/images/map_mask.png");
   	var particleMat = new THREE.ParticleBasicMaterial({
   		map: particleGraphic,
   		color: 0xE34031,
